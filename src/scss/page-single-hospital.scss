@@ -1,0 +1,134 @@
+.single-hospital__map {
+    width: 100%;
+    position: relative;
+
+    & iframe {
+        @include absoluteFullSpace;
+        z-index: 1;
+    }
+
+    @media(max-width: 998px) {
+        display: flex;
+        flex-direction: column;
+
+        iframe {
+            position: relative;
+            order: 2;
+            height: 350px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.single-hospital__title {
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(191, 191, 191, 0.6);
+    border-radius: 5px;
+    color: #333333;
+    font-size: rem(20);
+    padding: rem(25);
+    text-align: center;
+    font-weight: 600;
+}
+
+.single-hospital__wrap {
+    background: #ffffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), -1px -1px 3px #cdcdcd;
+    border-radius: 5px;
+    padding: rem(4);
+    margin-top: 11px;
+    // margin-bottom: rem(60);
+}
+
+.single-hospital__info {
+    display: flex;
+    gap: 34px;
+    padding: 30px;
+
+    @media(max-width: 998px) {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 20px;
+        margin: 10px 0px;
+    }
+}
+
+@media(max-width: 998px) {
+    .doctor-list__more {
+        margin-top: 30px;
+    }
+
+}
+
+
+.single-hospital__column {
+    flex: 1 1 50%;
+
+    & ul {
+        padding-left: 0px;
+
+        @media(max-width: 998px) {
+            padding-left: 10px;
+        }
+
+        & li {
+            list-style: initial;
+
+            &::after {
+                content: none;
+            }
+
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.single-hospital__icon {
+    position: relative;
+    padding-left: 40px;
+
+    @media(max-width: 998px) {
+        padding-left: 40px;
+    }
+
+    &::before {
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 6L13 11L7 6L4 18H8.18605L9 14L13 18L17 14L17.3953 18H22L19 6Z' fill='%231D812D'/%3E%3Ccircle cx='12.5' cy='12.5' r='12' stroke='%231D812D'/%3E%3C/svg%3E%0A");
+        background-size: contain;
+        background-position: center;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 20px;
+        transform: translateX(-50%);
+        top: -2px;
+    }
+}
+
+.single-hospital__slider {
+    padding: 0 25px 25px 25px;
+
+    @media(max-width: 998px) {
+        padding: 0px 0px 15px 0px;
+    }
+}
+
+.single-hospital__slide {
+    position: relative;
+
+    & img {
+        max-width: 100%;
+        max-height: 500px;
+    }
+}
+
+.swiper-pagination.single-hospital {
+    display: none;
+
+    @media(max-width: 998px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}

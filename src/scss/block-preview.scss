@@ -1,0 +1,125 @@
+//preview
+
+.preview {
+    margin: rem(30) rem(0);
+  }
+  
+  .preview__wrap {
+    margin: rem(30) rem(0);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(40) rem(90);
+  
+    @media(max-width: 1280px) {
+      gap: rem(20) rem(40);
+    }
+  
+    @media(max-width: 998px) {
+      gap: rem(20) rem(20);
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .preview__item {
+    background: #f0f0f3;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25),
+      -6px 4px 10px rgba(0, 0, 0, 0.25),
+      inset -10px -10px 20px rgba(192, 197, 205, 0.6),
+      inset 10px 10px 20px rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    position: relative;
+  
+    & a {
+      @include absoluteFullSpace;
+      z-index: 2;
+    }
+  
+    @media(max-width: 998px) {
+      max-width: 500px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+  
+  .preview__info {
+    padding: rem(40) rem(20);
+    text-align: center;
+    color: #575757;
+    font-weight: 600;
+    @include adaptiveValue(font-size, 22, 18);
+  
+    @media(max-width: 998px) {
+      padding: rem(20) rem(10);
+    }
+  }
+  
+  .preview--ibg {
+    padding-bottom: 85%;
+    z-index: 0;
+  
+    & img {
+      z-index: 0;
+    }
+  }
+  
+  .preview__more {
+    margin-top: rem(50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 998px) {
+      margin: 20px auto;
+    }
+    & .btn {
+      margin: 0 auto;
+      box-shadow: 6px 6px 4px rgba(24, 49, 80, 0.5),
+        -6px -6px 20px rgba(144, 166, 194, 0.6);
+    }
+  }
+  
+  .preview__item._question {
+    padding: rem(50) rem(24);
+    display: grid;
+    grid-template-rows: 1fr;
+    color: #303030;
+    font-size: rem(22);
+    gap: 17px;
+  
+    & a {
+      position: relative;
+      text-decoration-line: underline;
+      color: #2b5996;
+      font-size: rem(14);
+    }
+  
+    & span {
+      font-size: 18px;
+      color: #303030;
+    }
+  }
+  
+  .before-after__slider {
+    position: relative;
+    padding: rem(20) rem(20) rem(40) rem(20);
+    overflow: hidden;
+  }
+  
+  .swiper-pagination._preview {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 40px);
+  }
+  
+  .before-after__slide {
+    opacity: 0;
+    transition: 0.2s ease-in;
+  
+    &.swiper-slide-active {
+      opacity: 1;
+      transition: 0.2s ease-in;
+    }
+  }
+  

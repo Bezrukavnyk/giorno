@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main data-show-scroll="true" class="page">
+			<div class="breadcrams breadcrams__container">
+				<ul>
+					<li><a href="">Головна</a></li>
+					<li>Відгуки</li>
+				</ul>
+			</div>
+			<div class="head__container">
+				<h1>Відгуки</h1>
+			</div>
+			<div class="rewiews">
+				<div class="rewiews__container">
+					<div class="select__filter">
+						<div class="custom__select">
+							<p class="label__select">Послуга</p>
+							<form action="">
+								<select  data-submit  name="form[service]" class="form">
+									<option value="nothing" selected></option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</form>
+						</div>
+						<div class="custom__select">
+							<p class="label__select">Стоматологія</p>
+							<form action="">
+								<select  data-submit  name="form[dentistry]" class="form">
+									<option value="nothing" selected></option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</form>
+						</div>
+						<div class="custom__select">
+							<p class="label__select">ФИО</p>
+							<form action="">
+								<select  data-submit  name="form[name]" class="form">
+									<option value="nothing" selected></option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</form>
+						</div>
+					</div>
+					<div data-tabs class="rewiews-tabs">
+						<div class="rewiews--head">
+							<button type="button" class="rewiews__add rewies__title-btn" data-fancybox
+								data-src="#review">Додати відгук</button>
+							<nav data-tabs-titles class="rewiews__navigation">
+								<button type="button"
+									class="rewiews__title rewies__title-btn _tab-active _text-rewies">Текстові(956)</button>
+								<button type="button"
+									class="rewiews__title rewies__title-btn _video-rewies">Відео(34)</button>
+							</nav>
+						</div>
+						<div data-tabs-body class="rewiews__content">
+							<div class="rewiews__body">
+								<div class="rewiews__text--wrap">
+									<div class="rewiews__text--item">
+										<div class="rewiews__text--image">
+											<img src="@img/icon/children-tooth.png" alt="">
+										</div>
+										<div class="rewiews__text--main">
+											<div class="review__slide--name">
+												<p>Алла</p>
+											</div>
+											<div data-showmore class="review--more">
+												<div data-showmore-content="40" class="review--more__content">
+													<p>Гарний спеціаліст,чуйна, ввічлива, а головне дуже акуратно і
+														безболісно виконує свою роботу. Гарний спеціаліст,чуйна,
+														ввічлива, а головне дуже акуратно і безболісно виконує свою
+														роботу. Дякую!</p>
+													<p>Гарний спеціаліст,чуйна, ввічлива, а головне дуже акуратно і
+														безболісно виконує свою роботу. Гарний спеціаліст,чуйна,
+														ввічлива, а головне дуже акуратно і безболісно виконує свою
+														роботу. Дякую!</p>
+													<p>Прежде всего, высокотехнологичная концепция общественного уклада
+														требует определения и уточнения новых принципов формирования
+														материально-технической и кадровой базы. Для современного мира
+														внедрение современных методик предполагает независимые способы
+														реализации инновационных методов управления процессами. Базовые
+														сценарии поведения пользователей, вне зависимости от их уровня,
+														должны быть рассмотрены исключительно в разрезе маркетинговых и
+														финансовых предпосылок. В рамках спецификации современных
+														стандартов, диаграммы связей освещают чрезвычайно интересные
+														особенности картины в целом, однако конкретные выводы,
+														разумеется, заблокированы в рамках своих собственных
+														рациональных ограничений! Следует отметить, что экономическая
+														повестка сегодняшнего дня влечет за собой процесс внедрения и
+														модернизации системы обучения кадров, соответствующей насущным
+														потребностям. Сложно сказать, почему многие известные личности
+														преданы социально-демократической анафеме. Безусловно,
+														социально-экономическое развитие, в своём классическом
+														представлении, допускает внедрение распределения внутренних
+														резервов и ресурсов. Приятно, граждане, наблюдать, как многие
+														известные личности подвергнуты целой серии независимых
+														исследований.</p>
+												</div>
+												<button hidden data-showmore-button type="button"
+													class="review--more__more">
+													<span>Детальніше...</span>
+													<span>Скыть</span>
+												</button>
+											</div>
+											<div class="review__deteils">
+												<span class="review__deteils--place">ВДНГ</span>
+												<span class="review__deteils--other">Терапевтичне лікування</span>
+												<span class="review__deteils--other">Веприк О.М.</span>
+											</div>
+										</div>
+									</div>
+									<div class="rewiews__text--item">
+										<div class="rewiews__text--image">
+											<img src="@img/icon/children-tooth.png" alt="">
+										</div>
+										<div class="rewiews__text--main">
+											<div class="review__slide--name">
+												<p>Алла</p>
+											</div>
+											<div data-showmore class="review--more">
+												<div data-showmore-content="40" class="review--more__content">
+													<p>Гарний спеціаліст,чуйна, ввічлива, а головне дуже акуратно і
+														безболісно виконує свою роботу. Гарний спеціаліст,чуйна,
+														ввічлива, а головне дуже акуратно і безболісно виконує свою
+														роботу. Дякую!</p>
+													<p>Гарний спеціаліст,чуйна, ввічлива, а головне дуже акуратно і
+														безболісно виконує свою роботу. Гарний спеціаліст,чуйна,
+														ввічлива, а головне дуже акуратно і безболісно виконує свою
+														роботу. Дякую!</p>
+													<p>Прежде всего, высокотехнологичная концепция общественного уклада
+														требует определения и уточнения новых принципов формирования
+														материально-технической и кадровой базы. Для современного мира
+														внедрение современных методик предполагает независимые способы
+														реализации инновационных методов управления процессами. Базовые
+														сценарии поведения пользователей, вне зависимости от их уровня,
+														должны быть рассмотрены исключительно в разрезе маркетинговых и
+														финансовых предпосылок. В рамках спецификации современных
+														стандартов, диаграммы связей освещают чрезвычайно интересные
+														особенности картины в целом, однако конкретные выводы,
+														разумеется, заблокированы в рамках своих собственных
+														рациональных ограничений! Следует отметить, что экономическая
+														повестка сегодняшнего дня влечет за собой процесс внедрения и
+														модернизации системы обучения кадров, соответствующей насущным
+														потребностям. Сложно сказать, почему многие известные личности
+														преданы социально-демократической анафеме. Безусловно,
+														социально-экономическое развитие, в своём классическом
+														представлении, допускает внедрение распределения внутренних
+														резервов и ресурсов. Приятно, граждане, наблюдать, как многие
+														известные личности подвергнуты целой серии независимых
+														исследований.</p>
+												</div>
+												<button hidden data-showmore-button type="button"
+													class="review--more__more">
+													<span>Детальніше...</span>
+													<span>Скыть</span>
+												</button>
+											</div>
+											<div class="review__deteils">
+												<span class="review__deteils--place">ВДНГ</span>
+												<span class="review__deteils--other">Терапевтичне лікування</span>
+												<span class="review__deteils--other">Веприк О.М.</span>
+											</div>
+										</div>
+									</div>
+									<div class="rewiews__text--item">
+										<div class="rewiews__text--image">
+											<img src="@img/icon/children-tooth.png" alt="">
+										</div>
+										<div class="rewiews__text--main">
+											<div class="review__slide--name">
+												<p>Алла</p>
+											</div>
+											<div data-showmore class="review--more">
+												<div data-showmore-content="40" class="review--more__content">
+													<p>Гарний спеціаліст,чуйна, ввічлива, а головне дуже акуратно і
+														безболісно виконує свою роботу. Гарний спеціаліст,чуйна,
+														ввічлива, а головне дуже акуратно і безболісно виконує свою
+														роботу. Дякую!</p>
+													<p>Гарний спеціаліст,чуйна, ввічлива, а головне дуже акуратно і
+														безболісно виконує свою роботу. Гарний спеціаліст,чуйна,
+														ввічлива, а головне дуже акуратно і безболісно виконує свою
+														роботу. Дякую!</p>
+													<p>Прежде всего, высокотехнологичная концепция общественного уклада
+														требует определения и уточнения новых принципов формирования
+														материально-технической и кадровой базы. Для современного мира
+														внедрение современных методик предполагает независимые способы
+														реализации инновационных методов управления процессами. Базовые
+														сценарии поведения пользователей, вне зависимости от их уровня,
+														должны быть рассмотрены исключительно в разрезе маркетинговых и
+														финансовых предпосылок. В рамках спецификации современных
+														стандартов, диаграммы связей освещают чрезвычайно интересные
+														особенности картины в целом, однако конкретные выводы,
+														разумеется, заблокированы в рамках своих собственных
+														рациональных ограничений! Следует отметить, что экономическая
+														повестка сегодняшнего дня влечет за собой процесс внедрения и
+														модернизации системы обучения кадров, соответствующей насущным
+														потребностям. Сложно сказать, почему многие известные личности
+														преданы социально-демократической анафеме. Безусловно,
+														социально-экономическое развитие, в своём классическом
+														представлении, допускает внедрение распределения внутренних
+														резервов и ресурсов. Приятно, граждане, наблюдать, как многие
+														известные личности подвергнуты целой серии независимых
+														исследований.</p>
+												</div>
+												<button hidden data-showmore-button type="button"
+													class="review--more__more">
+													<span>Детальніше...</span>
+													<span>Скыть</span>
+												</button>
+											</div>
+											<div class="review__deteils">
+												<span class="review__deteils--place">ВДНГ</span>
+												<span class="review__deteils--other">Терапевтичне лікування</span>
+												<span class="review__deteils--other">Веприк О.М.</span>
+											</div>
+										</div>
+									</div>
+									<div class="rewiews__text--item">
+										<div class="rewiews__text--image">
+											<img src="@img/icon/children-tooth.png" alt="">
+										</div>
+										<div class="rewiews__text--main">
+											<div class="review__slide--name">
+												<p>Алла</p>
+											</div>
+											<div data-showmore class="review--more">
+												<div data-showmore-content="40" class="review--more__content">
+													<p>Гарний спеціаліст,чуйна, ввічлива, а головне дуже акуратно і
+														безболісно виконує свою роботу. Гарний спеціаліст,чуйна,
+														ввічлива, а головне дуже акуратно і безболісно виконує свою
+														роботу. Дякую!</p>
+													<p>Гарний спеціаліст,чуйна, ввічлива, а головне дуже акуратно і
+														безболісно виконує свою роботу. Гарний спеціаліст,чуйна,
+														ввічлива, а головне дуже акуратно і безболісно виконує свою
+														роботу. Дякую!</p>
+													<p>Прежде всего, высокотехнологичная концепция общественного уклада
+														требует определения и уточнения новых принципов формирования
+														материально-технической и кадровой базы. Для современного мира
+														внедрение современных методик предполагает независимые способы
+														реализации инновационных методов управления процессами. Базовые
+														сценарии поведения пользователей, вне зависимости от их уровня,
+														должны быть рассмотрены исключительно в разрезе маркетинговых и
+														финансовых предпосылок. В рамках спецификации современных
+														стандартов, диаграммы связей освещают чрезвычайно интересные
+														особенности картины в целом, однако конкретные выводы,
+														разумеется, заблокированы в рамках своих собственных
+														рациональных ограничений! Следует отметить, что экономическая
+														повестка сегодняшнего дня влечет за собой процесс внедрения и
+														модернизации системы обучения кадров, соответствующей насущным
+														потребностям. Сложно сказать, почему многие известные личности
+														преданы социально-демократической анафеме. Безусловно,
+														социально-экономическое развитие, в своём классическом
+														представлении, допускает внедрение распределения внутренних
+														резервов и ресурсов. Приятно, граждане, наблюдать, как многие
+														известные личности подвергнуты целой серии независимых
+														исследований.</p>
+												</div>
+												<button hidden data-showmore-button type="button"
+													class="review--more__more">
+													<span>Детальніше...</span>
+													<span>Скыть</span>
+												</button>
+											</div>
+											<div class="review__deteils">
+												<span class="review__deteils--place">ВДНГ</span>
+												<span class="review__deteils--other">Терапевтичне лікування</span>
+												<span class="review__deteils--other">Веприк О.М.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rewiews__body">
+								<div class="rewiews__video--wrap">
+									<div class="rewiews__video--item">
+										<a class="rewiews__video--ibg" data-fancybox="video-gallery"
+											href="https://www.youtube.com/watch?v=nvXhg1opVQc">
+											<img src="@img/video.png" alt="">
+										</a>
+										<p>Назва відео</p>
+									</div>
+									<div class="rewiews__video--item">
+										<a class="rewiews__video--ibg" data-fancybox="video-gallery"
+											href="https://www.youtube.com/watch?v=nvXhg1opVQc">
+											<img src="@img/video.png" alt="">
+										</a>
+										<p>Назва відео</p>
+									</div>
+									<div class="rewiews__video--item">
+										<a class="rewiews__video--ibg" data-fancybox="video-gallery"
+											href="https://www.youtube.com/watch?v=nvXhg1opVQc">
+											<img src="@img/video.png" alt="">
+										</a>
+										<p>Назва відео</p>
+									</div>
+									<div class="rewiews__video--item">
+										<a class="rewiews__video--ibg" data-fancybox="video-gallery"
+											href="https://www.youtube.com/watch?v=nvXhg1opVQc">
+											<img src="@img/video.png" alt="">
+										</a>
+										<p>Назва відео</p>
+									</div>
+									<div class="rewiews__video--item">
+										<a class="rewiews__video--ibg" data-fancybox="video-gallery"
+											href="https://www.youtube.com/watch?v=nvXhg1opVQc">
+											<img src="@img/video.png" alt="">
+										</a>
+										<p>Назва відео</p>
+									</div>
+									<div class="rewiews__video--item">
+										<a class="rewiews__video--ibg" data-fancybox="video-gallery"
+											href="https://www.youtube.com/watch?v=nvXhg1opVQc">
+											<img src="@img/video.png" alt="">
+										</a>
+										<p>Назва відео</p>
+									</div>
+									<div class="rewiews__video--item">
+										<a class="rewiews__video--ibg" data-fancybox="video-gallery"
+											href="https://www.youtube.com/watch?v=nvXhg1opVQc">
+											<img src="@img/video.png" alt="">
+										</a>
+										<p>Назва відео</p>
+									</div>
+									<div class="rewiews__video--item">
+										<a class="rewiews__video--ibg" data-fancybox="video-gallery"
+											href="https://www.youtube.com/watch?v=nvXhg1opVQc">
+											<img src="@img/video.png" alt="">
+										</a>
+										<p>Назва відео</p>
+									</div>
+									<div class="rewiews__video--item">
+										<a class="rewiews__video--ibg" data-fancybox="video-gallery"
+											href="https://www.youtube.com/watch?v=nvXhg1opVQc">
+											<img src="@img/video.png" alt="">
+										</a>
+										<p>Назва відео</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="preview__more">
+							<ul class="pagination">
+								<li class="pag-link"><a href="">1</a></li>
+								<li class="pag-link"><a href="">2</a></li>
+								<li class="pag-link"><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">...</a></li>
+								<li><a href="">8</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

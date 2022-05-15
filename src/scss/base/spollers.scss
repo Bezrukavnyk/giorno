@@ -1,0 +1,161 @@
+// Базовые стили спойлеров
+// Сниппет (HTML): spoller
+
+// Блок со спойлерами
+.spollers {
+	display: grid;
+	gap: 15px;
+}
+// Спойлер
+.spollers__item {
+	@include adaptiveValue('font-size', 20, 16);
+}
+// Заголовок спойлера
+.spollers__title {
+	width: 100%;
+	cursor: default;
+	text-align: left;
+	// border: 1px solid #eee;
+	padding: rem(6) rem(16);
+	position: relative;
+	._spoller-init & {
+		cursor: pointer;
+		&::before{
+			content: "";
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			@include arrowDown;
+			background-size: 20px 20px;
+			background-repeat: no-repeat;
+			transform: translate(0%, -50%) rotate(0deg);
+			background-position: center;
+			height: 32px;
+			width: 32px;
+			transition: transform 0.5s ease 0s;
+			@media (max-width: 998px) {
+				height: 25px;
+				width: 25px;
+			}
+		}
+		&._spoller-active {
+			&::before {
+				transform: translate(0%, -50%) rotate(-180deg);
+			}
+			& ~ .spollers__body .spollers__body--header{
+				animation: animation 0.3s linear forwards 0.3s;
+			}
+		}
+	}
+}
+// Контент спойлера
+.spollers__body {
+	position: absolute;
+}
+@keyframes animation{
+	0%{
+		box-shadow: 0px 10px 20px rgba(255, 255, 255, 0);
+	}
+	100%{
+		box-shadow: 0px 10px 20px rgba(191, 191, 191, 0.6);
+	}
+}
+
+// price 
+
+
+.spollers__title.spollers__title--price {
+	transition: 0.1s ease-in;
+	background-color: #fff;
+	padding: rem(20) rem(0);
+  }
+  .spollers__title.spollers__title--price._spoller-active {
+	background: #f5f5f5;
+	color: #2b5996;
+	transition: 0.1s ease-in;
+  }
+  .prices__spoller--body {
+	background: #f5f5f5;
+	padding: rem(0) rem(8) rem(12) rem(8);
+  }
+  .prices__spoller--body {
+	& ul {
+	  & li {
+		margin-bottom: rem(6);
+		cursor: pointer;
+		& .price__main {
+		  display: flex;
+		  gap: rem(30);
+		  justify-content: space-between;
+		  align-items: center;
+		  position: relative;
+		  @media (max-width: 998px) {
+			align-items: flex-start;
+		  }
+		  &::after {
+			content: "";
+			width: 100%;
+			left: 0;
+			top: 50%;
+			position: absolute;
+			transform: translateY(-50%);
+			border: 0.5px dashed #cdcdcd;
+			@media (max-width: 998px) {
+			  transform: translateY(0%);
+			  top: 16px;
+			}
+		  }
+		}
+		& .btn {
+		  @media (max-width: 998px) {
+			font-size: rem(14) !important;
+		  }
+		  height: auto;
+		  transition: 0s linear;
+		}
+	  }
+	}
+  }
+
+  // offer
+
+  .spollers__item.spollers__custom.spollers__offer {
+	& .spollers__title::before {
+	  left: 10px;
+	  @media (max-width: 998px) {
+		left: 0px;
+	  }
+	}
+	& .spollers__title {
+	  padding: rem(20) rem(100) rem(20) rem(50);
+	  font-size: rem(16);
+	  font-weight: 400;
+	  display: flex;
+	  justify-content: space-between;
+	  @media (max-width: 998px) {
+		padding: rem(10) rem(70) rem(10) rem(40);
+	  }
+	  & a {
+		text-decoration: underline;
+	  }
+	}
+  }
+  .spollers__wrap {
+	margin-top: rem(30);
+  }
+
+
+  // vacancy
+
+.spollers__item.spollers__custom .spollers__title.spollers__title--vacancy {
+	padding: rem(20) rem(0);
+	@include adaptiveValue('font-size', 26, 18);
+	transition: 0.2s ease-in;
+	&._spoller-active {
+	  @media (min-width: 1024px) {
+		   font-size: rem(32);
+	  transition: 0.2s ease-in;
+	  padding: rem(20) rem(0) rem(20) rem(0); 
+	  }
+	}
+  }

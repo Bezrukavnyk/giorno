@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main data-show-scroll="true" class="page">
+				<div class="breadcrams breadcrams__container">
+					<ul>
+						<li><a href="">Головна</a></li>
+						<li>Answer</li>
+					</ul>
+				</div>
+				<div class="head__container">
+					<h1>Answer</h1>
+				</div>
+				<section class="quesitions">
+					<div class="quesitions__container">
+						<div class="quesitions__wrap max-width-left">
+							<div class="quesitions__item border-none">
+								<div class="quesitions__item--logo">
+									<img src="@img/icon/quesitions.png" alt="">
+									<p>Узнай у «Джорно»</p>
+								</div>
+								<div class="quesitions__item--main">
+									<p class="quesitions__item--title">Занятия проходят в разных корпусах вуза, студент не успевает с пары на пару. Что делать?</p>
+									<span>Вы спрашиваете — «Джорно» отвечает</span>
+									<div class="answer__text">
+										<p>С другой стороны, перспективное планирование, в своём классическом представлении, допускает внедрение вывода текущих активов.
+										</p>
+										<p>Прежде всего, курс на социально-ориентированный национальный проект прекрасно подходит для реализации кластеризации усилий. Следует отметить, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых предложений. Также как существующая теория в значительной степени обусловливает важность форм воздействия. Безусловно, высококачественный прототип будущего проекта требует анализа своевременного выполнения сверхзадачи. Принимая во внимание показатели успешности, существующая теория способствует подготовке и реализации поэтапного и последовательного развития общества. 	С другой стороны, перспективное планирование, в своём классическом представлении, допускает внедрение вывода текущих активов.
+										</p>
+									</div>
+								</div>
+							</div>
+					</div>
+				</section>
+				<section class="ask_a_question">
+					<div class="ask_a_question__container">
+						<h2 class="header-h2">Задати питання</h2>
+						<div class="ask_a_question__wrap max-width-left">
+							<form action="#">
+								<label class="ask-input">
+									ФИО 
+									<input name="" type="text" required>
+								</label>
+								<label class="ask-input">
+									Телефон 
+									<input type="tel" name="" required>
+								</label>
+								<label class="ask-input">
+									E-mail
+									<input type="email" name="" required>
+								</label>
+								<label class="ask-textarea">
+									Питання
+									<textarea name="" ></textarea>
+								</label>
+								<button class="btn btn-link">Відправити</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

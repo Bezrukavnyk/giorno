@@ -1,0 +1,83 @@
+// price
+
+.price {
+
+    &__wrap {
+      padding: rem(10) rem(0);
+    }
+  
+    & .spollers {
+      margin-top: rem(20);
+      gap: rem(0);
+    }
+  }
+  
+  .price__name,
+  .price__value {
+    position: relative;
+    z-index: 2;
+    background: #f5f5f5;
+  }
+  
+  .price__name {
+    padding-right: rem(8);
+  
+    &:hover {
+      color: $colorLink;
+      transition: 0.2s linear;
+    }
+  }
+  
+  .price__value {
+    padding-left: rem(8);
+    display: flex;
+    gap: rem(16);
+    align-items: center;
+  
+    @media (max-width: 998px) {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  }
+  
+  .price__label-sale {
+    background: #ff0182;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #fff;
+    padding: rem(6) rem(15);
+  }
+  
+  .price__old-price {
+    text-decoration-line: line-through;
+    color: #575757;
+  }
+  
+  .price__current--price {
+    color: #2b5996;
+  }
+  
+  .price__order-call {
+    max-height: 0px;
+    padding: rem(0) rem(0);
+    transition: 0.2s linear;
+    overflow: hidden;
+  }
+  
+  .price__item--wrap._active {
+    & .btn {
+      font-size: rem(20);
+      height: auto;
+      transition: 0s linear;
+    }
+  
+    & .price__order-call {
+      padding: rem(6) rem(0) rem(6) rem(0);
+      max-height: 100%;
+      transition: 0.2s linear;
+    }
+  }
+  
+  .price__main {
+    padding: rem(6) rem(0);
+  }

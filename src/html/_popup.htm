@@ -1,0 +1,148 @@
+<!-- Фун-я для вызова попапа в src указать нужый id popup-->
+<!-- // Fancybox.show([{ src: "#review", type: "inline" }]); -->
+
+<div id="order-visit" style="display: none" class="popup-order">
+  <h2 class="header-h2 _center">Записатись на прийом</h2>
+  <div class="popup-order__wrap">
+    <div class="popup-order__img">
+      <img src="@img/icon/quesitions.png" alt="" />
+    </div>
+    <div class="popup-order__main">
+      <form action="">
+        <label class="ask-input">
+          ФИО
+          <input name="" type="text" required />
+        </label>
+        <label class="ask-input">
+          Телефон
+          <input type="tel" name="" required />
+        </label>
+        <label class="ask-input">
+          Коментар
+          <input name="" type="text" required />
+        </label>
+        <div class="checkbox">
+          <input id="c_order-visit" data-error="Ошибка" required class="checkbox__input" type="checkbox" value="1"
+            name="form[]" />
+          <label for="c_order-visit" class="checkbox__label"><span class="checkbox__text">Натискаючи кнопку “Залишити
+              заявку”, я даю згоду на обробку
+              персональних даних</span></label>
+        </div>
+        <button class="btn btn-link">Відправити</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="consultation" style="display: none" class="popup-order">
+  <h2 class="header-h2 _center">Записатись на консультацію</h2>
+  <div class="popup-order__wrap">
+    <div class="popup-order__img">
+      <img src="@img/icon/quesitions.png" alt="" />
+    </div>
+    <div class="popup-order__main">
+      <form action="">
+        <label class="ask-input">
+          ФИО
+          <input name="" type="text" required />
+        </label>
+        <label class="ask-input">
+          Телефон
+          <input type="tel" name="" required />
+        </label>
+        <label class="ask-input">
+          Коментар
+          <input name="" type="text" required />
+        </label>
+        <div class="checkbox">
+          <input id="c_consultation" data-error="Ошибка" required class="checkbox__input" type="checkbox" value="1"
+            name="form[]" />
+          <label for="c_consultation" class="checkbox__label"><span class="checkbox__text">Натискаючи кнопку “Залишити
+              заявку”, я даю згоду на обробку
+              персональних даних</span></label>
+        </div>
+        <button class="btn btn-link">Відправити</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="success" style="display: none" class="popup-order">
+  <div class="popup-order__wrap _success">
+    <div class="popup-order__img">
+      <img src="@img/icon/success.png" alt="" />
+    </div>
+    <div class="popup-order__main">
+      <p>Дякуємо за повідомлення!</p>
+      <p>
+        Ми цінуємо кожне Ваше звернення. <br />
+        Ми передзвонимо Вам найближчим часом
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="success-answer" style="display: none" class="popup-order">
+  <div class="popup-order__wrap _success">
+    <div class="popup-order__img">
+      <img src="@img/icon/success.png" alt="" />
+    </div>
+    <div class="popup-order__main">
+      <p>Дякуємо за відгук!</p>
+    </div>
+  </div>
+</div>
+
+<div id="review" style="display: none" class="popup-order">
+    <div class="popup__review--wrap">
+      <h2 class="header-h2">Додати відгук</h2>
+      <div class="popup-review">
+        <form action="">
+          <label class="ask-input">
+            ПІБ
+            <input name="" type="text" required />
+          </label>
+          <div class="select__filter">
+            <div class="custom__select">
+              <p class="label__select">Послуга</p>
+              <select name="form[service]" class="form">
+                <option value="nothing" selected></option>
+                <option value="2">Пункт №1</option>
+                <option value="3">Пункт №2</option>
+                <option value="4">Пункт №4</option>
+              </select>
+            </div>
+            <div class="custom__select">
+              <p class="label__select">Стоматологія</p>
+    
+              <select name="form[dentistry]" class="form">
+                <option value="nothing" selected></option>
+                <option value="2">Пункт №1</option>
+                <option value="3">Пункт №2</option>
+                <option value="4">Пункт №4</option>
+              </select>
+            </div>
+            <div class="custom__select _search">
+              <p class="label__select">ПІБ Лікаря</p>
+              <div class="input-search">
+                <input type="text" />
+                <button class="btn-search"></button>
+              </div>
+            </div>
+          </div>
+          <label class="ask-input texterea">
+            Відгук
+            <textarea name=""></textarea>
+          </label>
+          <div class="checkbox">
+            <input id="c_review" data-error="Ошибка" required class="checkbox__input" type="checkbox" value="1"
+              name="form[]" />
+            <label for="c_review" class="checkbox__label"><span class="checkbox__text">Натискаючи кнопку “Залишити заявку”,
+                я даю згоду на обробку
+                персональних даних</span></label>
+          </div>
+          <button class="btn btn-link">Відправити</button>
+        </form>
+      </div>
+    </div>
+</div>

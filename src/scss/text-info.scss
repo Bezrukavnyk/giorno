@@ -1,0 +1,27 @@
+// text-info
+
+.text-info {
+    padding: rem(60) rem(0);
+  
+    & p,
+    & ul,
+    & ul li {
+      margin-bottom: 15px;
+      color: #333333;
+  
+      &:last-child {
+        margin-bottom: rem(0);
+      }
+    }
+  
+    @media (max-width: 768px) {
+      padding: rem(30) rem(0);
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .text-info.m-top-not {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }

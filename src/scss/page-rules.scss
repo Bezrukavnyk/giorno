@@ -1,0 +1,26 @@
+// rules
+.rules {
+    margin-bottom: rem(30);
+  
+    &__wrap {
+      & h2 {
+        margin-top: rem(30);
+        margin-bottom: rem(20);
+        text-align: left;
+        color: $colorLink;
+        @include adaptiveValue('font-size', 26, 22);
+        max-width: rem(1300);
+  
+        @media (max-width: 998px) {
+          margin: rem(10) 0;
+        }
+      }
+  
+      & ul,
+      & p {
+        margin-bottom: rem(15);
+        @include adaptiveValue('font-size', 20, 16);
+      }
+    }
+  }
+  

@@ -1,0 +1,64 @@
+// dentist
+@media (max-width:768px) {
+    .dentist__container {
+      padding: 0;
+    }
+  }
+  
+  .dentist__image-ibg {
+    width: 100%;
+    height: calc(100vh - rem(200));
+    margin-top: rem(60);
+    margin-bottom: rem(60);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  
+  .dentist__info {
+    background: rgba(64, 106, 161, 0.6);
+    padding: rem(80) rem(30) rem(70) rem(30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: rem(955);
+    color: #fff;
+  
+    @media (max-width:768px) {
+      padding: 20px;
+    }
+  
+    & h1 {
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: rem(56);
+      line-height: 125%;
+      color: #ffffff;
+      font-weight: 700;
+  
+      @media (max-width:768px) {
+        font-size: 30px;
+      }
+    }
+  
+    & p {
+      font-size: rem(26);
+      line-height: 125%;
+  
+      @media (max-width:768px) {
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .dentist__info--wrap {
+    display: flex;
+    flex: 1 1 auto;
+    max-width: rem(590);
+    flex-direction: column;
+    gap: rem(30);
+  }
+  

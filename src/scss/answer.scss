@@ -1,0 +1,82 @@
+
+.answer__text {
+
+    & p,
+    & ul,
+    & ul li {
+      margin-bottom: 15px;
+      color: #333333;
+  
+      &:last-child {
+        margin-bottom: rem(0);
+      }
+    }
+  }
+  
+  .border-none {
+    border: none;
+  }
+  
+  .ask_a_question__wrap {
+    margin: rem(30) auto rem(60) rem(0);
+  
+    & form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+  
+      & label {
+        display: flex;
+        flex-direction: column;
+        color: #333333;
+        font-size: rem(18);
+        font-weight: 600;
+      }
+    }
+  }
+  
+  .ask-textarea {
+    width: 100%;
+  
+    & textarea {
+      resize: none;
+      padding: 5px 0;
+      border-bottom: 1px solid #eaeaea;
+    }
+  
+    & textarea:focus {
+      outline: none;
+      border-bottom: 3px solid $colorLink;
+      transition: 0.2s ease-in;
+    }
+  }
+  
+  .ask-input {
+    flex: 1 1 calc(33% - 30px);
+  
+    & input {
+      padding: 5px 0;
+      border-bottom: 1px solid #eaeaea;
+    }
+  
+    & input:focus {
+      outline: none;
+      border-bottom: 3px solid $colorLink;
+      transition: 0.2s ease-in;
+    }
+  }
+  
+  .newSingle.mg-t {
+    margin-top: rem(30);
+  }
+  
+  .warranty__container {
+    margin-bottom: rem(60);
+  
+    & p,
+    & ul,
+    & ul li {
+      margin-bottom: 15px;
+      color: #333333;
+    }
+  }

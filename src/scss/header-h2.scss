@@ -1,0 +1,22 @@
+// header-h2
+.header-h2 {
+    font-weight: 400;
+    font-size: rem(32);
+    line-height: 125%;
+    color: $lightText;
+    width: 100%;
+    text-align: left;
+  
+    @media (max-width: 768px) {
+      font-size: rem(22);
+      font-weight: 600;
+    }
+  
+    &._center {
+      text-align: center;
+    }
+  
+    &._white {
+      color: #fff;
+    }
+  }

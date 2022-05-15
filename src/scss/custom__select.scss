@@ -1,0 +1,58 @@
+// custom__select
+.custom__select {
+    & .select__value {
+      padding: rem(6) rem(12);
+      background-color: #fff;
+      min-width: rem(300);
+      border-bottom: 1px solid #98999b;
+      text-align: left;
+      text-align: left;
+      color: $colorLink;
+      @include adaptiveValue('font-size', 26, 18);
+  
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.882812 0H15.4555L8.16918 10L0.882812 0Z' fill='%23333333'/%3E%3C/svg%3E%0A");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  
+    & .select__options {
+      background-color: #fff;
+      padding: rem(6) rem(0);
+      box-shadow: 0px 10px 20px rgba(191, 191, 191, 0.6);
+      border-radius: 5px;
+    }
+  
+    & .select__body {
+      position: relative;
+      margin-right: auto;
+      display: inline-flex;
+    }
+  
+    & .select__option {
+      padding: rem(6) rem(12);
+      text-align: left;
+      color: $colorLink;
+      @include adaptiveValue('font-size', 26, 18);
+    }
+  }
+  
+  .select__option[hidden] {
+    display: none;
+  }
+  
+  .select__option[data-value="nothing"] {
+    display: none;
+  }
+  
+  .label__select {
+    @include adaptiveValue('font-size', 26, 20);
+    padding: rem(16) rem(0);
+  
+    @media (max-width: 998px) {
+      padding: rem(0) rem(0) rem(10) rem(0);
+    }
+  }
+  

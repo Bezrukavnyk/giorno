@@ -1,0 +1,29 @@
+// breadcrams
+
+.breadcrams {
+    margin-top: rem(30);
+    color: #494f59;
+    font-size: rem(14);
+  
+    & ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      & li {
+        position: relative;
+  
+        &::before {
+          content: " > ";
+          position: absolute;
+          top: 55%;
+          transform: translatey(-50%);
+          right: -15px;
+        }
+  
+        &:last-child::before {
+          content: none;
+        }
+      }
+    }
+  }

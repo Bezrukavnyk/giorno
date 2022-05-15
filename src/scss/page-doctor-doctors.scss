@@ -1,0 +1,108 @@
+// doctors and doctor
+.doctors__container .doctor-list__wrap {
+    @media(max-width: 998px) {
+      padding-bottom: 0;
+    }
+  }
+  
+  .doctor__container {
+    display: flex;
+    gap: rem(50);
+    @media(max-width: 998px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  
+  .doctor__info {
+    width: 50%;
+    min-width: rem(550);
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: rem(16);
+    @media(max-width: 998px) {
+      order: 2;
+      min-width: auto;
+      width: 100%;
+      gap: 8px;
+    }
+  }
+  
+  .doctor__info--item {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: rem(16);
+    color: #303030;
+    @include adaptiveValue(font-size, 28, 20);
+  
+    & span {
+      color: $colorLink;
+    }
+  
+    & .points__wraper {
+      margin: 0;
+      font-size: rem(18);
+    }
+  }
+  
+  .doctor__info--about {
+    font-size: rem(16);
+  }
+  
+  .doctor {
+    margin-bottom: rem(30);
+  }
+  
+  .doctor__other {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: center;
+    @media(max-width: 998px) {
+      order: 1;
+    }
+  
+    & .btn__call-me {
+      margin: rem(20) auto;
+      padding: 15px 20px;
+      height: auto;
+    }
+  }
+  
+  .doctor__image--ibg {
+    flex: 1 1 auto;
+    width: 100%;
+    @media(max-width: 998px) {
+      height: 300px;
+    }
+    & img {
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  
+  .certificate__slider {
+    margin: rem(30) 0;
+  
+    & .swiper-pagination {
+      margin: rem(30) auto rem(0) auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  .certificate__slide {
+    & img {
+      max-width: 100%;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .btn-link.-mb {
+    margin-bottom: 60px;
+  }

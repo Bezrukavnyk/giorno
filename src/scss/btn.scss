@@ -1,0 +1,79 @@
+// btn
+.btn {
+    background: #ffffff;
+    box-shadow: 6px 6px 4px rgba(24, 49, 80, 0.5),
+      -6px -6px 20px rgba(144, 166, 194, 0.6);
+    color: $colorLink;
+    margin-right: auto;
+    padding: rem(6);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+    &-dentist {
+      padding: rem(23) rem(58);
+      font-size: rem(20);
+      font-weight: 600;
+  
+      @media (max-width:768px) {
+        font-size: 18px;
+        text-align: center;
+        padding: rem(10) rem(30);
+        margin: 0 auto;
+      }
+    }
+  
+    &-more {
+      margin-right: 0;
+      background: #ffffff;
+      box-shadow: 2px 2px 4px rgba(34, 34, 34, 0.5);
+      border-radius: 20px;
+      padding: rem(8);
+      text-transform: uppercase;
+      font-size: rem(14);
+      line-height: 125%;
+      text-align: center;
+      height: rem(34);
+    }
+  
+    &__call-me {
+      margin-right: 0;
+      color: #ffffff;
+      background: #406aa1;
+      box-shadow: 2px 2px 4px rgba(24, 49, 80, 0.5), -2px -2px 4px #d3d3d3,
+        inset 2px 2px 10px rgba(103, 137, 182, 0.5);
+      border-radius: 20px;
+      padding: rem(8);
+      text-transform: uppercase;
+      font-size: rem(14);
+      height: rem(34);
+    }
+  
+    &-link {
+      background: #ffffff;
+      box-shadow: 0px 10px 20px rgba(191, 191, 191, 0.6);
+      border-radius: 40px;
+      padding: rem(8);
+      height: rem(50);
+      min-width: rem(208);
+      color: $colorLink;
+      font-weight: 600;
+      font-size: rem(20);
+    }
+  
+    &-vacancy {
+      background: #ffffff;
+      box-shadow: 0px 10px 20px rgba(191, 191, 191, 0.6);
+      border-radius: 40px;
+      padding: rem(12) rem(20);
+      font-size: rem(20);
+      font-weight: 600;
+      height: auto;
+    }
+  }
+  

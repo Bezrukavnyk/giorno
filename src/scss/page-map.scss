@@ -1,0 +1,84 @@
+
+
+// map
+
+.map__container {
+    margin-top: rem(30);
+    margin-bottom: rem(60);
+  
+    @media (max-width: 998px) {
+      margin-top: rem(0);
+      margin-bottom: rem(30);
+    }
+  }
+  
+  .map__wrap {
+    margin-top: rem(30);
+  
+    @media (max-width: 998px) {
+      margin-top: rem(0);
+    }
+  
+    & .spollers {
+      gap: 0px;
+    }
+  }
+  
+  .spollers__item.spollers__custom {
+    padding-left: 0;
+    border-bottom: 1px solid #c4c4c4;
+  
+    & .spollers__title {
+      padding: rem(14) rem(50) rem(14) rem(0);
+      @include adaptiveValue('font-size', 26, 16);
+  
+      &::before {
+        background-size: contain;
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='14.5' stroke='%23C4C4C4'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 7C15.5523 7 16 7.44772 16 8V14H22C22.5523 14 23 14.4477 23 15C23 15.5523 22.5523 16 22 16H16V22C16 22.5523 15.5523 23 15 23C14.4477 23 14 22.5523 14 22V16H8C7.44772 16 7 15.5523 7 15C7 14.4477 7.44772 14 8 14H14V8C14 7.44772 14.4477 7 15 7Z' fill='%23C4C4C4'/%3E%3C/svg%3E%0A");
+      }
+    }
+  
+    & .spollers__title._spoller-active::before {
+      background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='14.5' stroke='%232B5996'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 14H22C22.5523 14 23 14.4477 23 15C23 15.5523 22.5523 16 22 16H8C7.44772 16 7 15.5523 7 15C7 14.4477 7.44772 14 8 14Z' fill='%232B5996'/%3E%3C/svg%3E ");
+    }
+  
+    & .spollers__body {
+      position: relative;
+  
+      & .map__list {
+        padding: rem(0) rem(0) rem(20) rem(0);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+  
+        & .services__item {
+          width: rem(345);
+        }
+  
+        & ul {
+          padding-left: 20px;
+  
+          & li {
+            position: relative;
+  
+            &:not(:last-child) {
+              margin-bottom: 14px;
+            }
+  
+            &::after {
+              position: absolute;
+              content: "";
+              width: rem(6);
+              height: rem(6);
+              left: -14px;
+              top: 50%;
+              transform: translateY(-50%);
+              background: #406aa1;
+              border-radius: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,30 @@
+// offer
+
+
+.offer__body {
+    & iframe {
+      height: calc(100vh - rem(180));
+      width: 100%;
+    }
+  }
+  
+  .map__container._offer .spollers {
+    margin-top: rem(16);
+  }
+  
+  .download-link {
+    position: absolute;
+    right: 20px;
+    text-decoration: underline !important;
+    font-size: rem(16);
+    top: 18px;
+    z-index: 3;
+  
+    @media (max-width: 998px) {
+      right: 0;
+    }
+  }
+  
+  .map__container._offer .header-h2 {
+    @include adaptiveValue('font-size', 32, 18);
+  }

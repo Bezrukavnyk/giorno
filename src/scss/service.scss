@@ -1,0 +1,155 @@
+
+// services
+
+.head__container {
+    margin: rem(28) auto;
+  
+    @media (max-width: 998px) {
+      margin: rem(16) auto;
+    }
+  }
+  
+  .services__indicator {
+    margin: rem(60) auto rem(30) auto;
+  
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .m-top-not {
+    margin-top: 0;
+  }
+  
+  
+  // category services
+  .max-width {
+    max-width: rem(950);
+  }
+  
+  .catagory-services__container {
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  
+  .catagory__banner--info {
+    padding: rem(34) rem(160);
+    background: rgba(64, 106, 161, 0.6);
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    line-height: 125%;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 22px;
+  
+    @media (max-width: 768px) {
+      padding: rem(150) rem(16) rem(24) rem(16);
+      gap: 10px;
+    }
+  
+    & * {
+      line-height: 125%;
+    }
+  
+    & h2 {
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 125%;
+  
+      @include adaptiveValue(font-size, 56, 26);
+    }
+  
+    & p {
+      @include adaptiveValue(font-size, 26, 18);
+      line-height: 125%;
+      font-weight: 400;
+    }
+  
+    & .btn-dentist {
+      box-shadow: 0px 10px 20px rgba(191, 191, 191, 0.6);
+      font-size: rem(18);
+      padding: rem(14) rem(20);
+      color: #333333;
+  
+      @media (max-width: 768px) {
+        padding: rem(10) rem(15);
+      }
+    }
+  }
+  
+  .max-width-text {
+  
+    & p,
+    & ul,
+    & ul li {
+      max-width: rem(950);
+    }
+  }
+  
+  .width-bg {
+    background: #f3f7fa;
+  }
+  
+  .pd-small {
+    padding: rem(30) 0;
+  }
+  
+  // price--services
+  
+  .price__head {
+    margin: rem(40) rem(0) rem(0) rem(0);
+  
+    @media (max-width: 768px) {
+      margin: rem(20) rem(0) rem(10) rem(0);
+    }
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    & a {
+      text-decoration: underline;
+      color: #303030;
+      font-size: rem(18);
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+  
+  .include-price {
+    & .spollers {
+      gap: 0;
+      margin-top: rem(20);
+      margin-bottom: rem(40);
+    }
+  }
+  
+  .w-out-bg {
+    background-color: transparent;
+  
+    @media (max-width: 768px) {
+      .link--arrow {
+        margin: 5px auto;
+      }
+    }
+  }
+  
+  .services__container {
+    & h2 {
+      padding-top: rem(60);
+  
+      @media (max-width: 768px) {
+        padding-top: 30px;
+        text-align: center;
+      }
+    }
+  }
+  
+  .mg-4-0 {
+    margin: rem(40) 0;
+  }
+  

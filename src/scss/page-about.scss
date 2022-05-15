@@ -1,0 +1,102 @@
+// about
+
+.about__container {
+    margin-top: rem(30);
+  }
+  
+  .banner__image--ibg {
+    width: 100%;
+    margin: rem(30) auto rem(30) auto;
+    padding-bottom: 30%;
+  
+    @media (max-width: 768px) {
+      padding-bottom: 50%;
+    }
+  }
+  
+  .indicator__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include adaptiveValue(gap, 60, 30);
+    width: 100%;
+  
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+  
+  .about__indicator {
+    margin-bottom: rem(30);
+  }
+  
+  .indicator__current {
+    color: #406aa1;
+    font-weight: 900;
+    @include adaptiveValue(font-size, 180, 90);
+    line-height: 115%;
+  }
+  
+  .indicator__name {
+    font-weight: 900;
+    color: #303030;
+    @include adaptiveValue(font-size, 40, 22);
+    line-height: 125%;
+  }
+  
+  .indicator__wrap._indicator-about {
+    & .indicator__item {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background: #f8fafc;
+      box-shadow: 10px 10px 10px rgba(206, 218, 227, 0.6),
+        -6px 4px 10px rgba(255, 255, 255, 0.6),
+        inset -10px -10px 20px rgba(192, 197, 205, 0.6),
+        inset 10px 10px 20px rgba(255, 255, 255, 0.4);
+      border-radius: 20px;
+    }
+  
+    & .indicator__current {
+      color: #406aa1;
+      font-weight: 900;
+      @include adaptiveValue(font-size, 120, 60);
+      line-height: 115%;
+    }
+  
+    & .indicator__name {
+      font-weight: 900;
+      color: #303030;
+      @include adaptiveValue(font-size, 40, 14);
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .indicator__item {
+      padding: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background: #f8fafc;
+      box-shadow: 10px 10px 10px rgba(206, 218, 227, 0.6),
+        -6px 4px 10px rgba(255, 255, 255, 0.6),
+        inset -10px -10px 20px rgba(192, 197, 205, 0.6),
+        inset 10px 10px 20px rgba(255, 255, 255, 0.4);
+      border-radius: 20px;
+    }
+  
+    .indicator__current {
+      @include adaptiveValue(font-size, 120, 60);
+    }
+  
+    .indicator__name {
+      @include adaptiveValue(font-size, 40, 14);
+    }
+  }
+  
+  
