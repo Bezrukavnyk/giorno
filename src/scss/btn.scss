@@ -14,6 +14,12 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: 0.3s ease-in;
+    &:hover{
+      background: #122948;
+      color: #ffffff;
+      transition: 0.3s ease-in;
+    }
   
     &-dentist {
       padding: rem(23) rem(58);
@@ -52,6 +58,13 @@
       text-transform: uppercase;
       font-size: rem(14);
       height: rem(34);
+          &:hover{
+          background: #122948;
+          color: #ffffff;
+          transition: 0.3s ease-in;
+          box-shadow: 2px 2px 4px rgba(24, 49, 80, 0), -2px -2px 4px #d3d3d300,
+          inset 2px 2px 10px rgba(103, 137, 182, 0);
+    }
     }
   
     &-link {

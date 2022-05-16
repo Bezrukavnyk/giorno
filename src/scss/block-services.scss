@@ -25,6 +25,11 @@
       padding: rem(18);
       position: relative;
       display: flex;
+      transition: 0.2s ease-in;
+      &:hover{
+        transition: 0.2s ease-in;
+        box-shadow: 10px 10px 10px rgb(60 108 145 / 60%), -6px 4px 10px rgb(255 255 255 / 60%), inset -10px -10px 20px rgb(192 197 205 / 60%), inset 10px 10px 20px rgb(255 255 255 / 40%);
+      }
   
       @media (max-width: 768px) {
         height: auto;

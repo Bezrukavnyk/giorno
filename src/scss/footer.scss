@@ -12,6 +12,12 @@
 	font-weight: 600;
 	cursor: pointer;
 	font-size: rem(18);
+    transition: 0.3s ease-in;
+    &:hover{
+        background: #122948;
+        color: #ffffff;
+        transition: 0.3s ease-in;
+      }
     @media(max-width: 768px){
         display: none;
     }

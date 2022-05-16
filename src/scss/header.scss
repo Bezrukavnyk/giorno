@@ -242,6 +242,12 @@
 	font-weight: 600;
 	cursor: pointer;
 	font-size: rem(18);
+	transition: 0.3s ease-in;
+	&:hover{
+		background: #122948;
+		color: #ffffff;
+		transition: 0.3s ease-in;
+	}
 	@media(max-width: 768px){
 		font-size: 16px;
 		font-weight: 400;
@@ -359,6 +365,25 @@
 	}
 }
 .nav__container .menu-list{
+	& li{
+		position: relative;
+		&::before{
+			content: '';
+			width: 0%;
+			height: 2px;
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			transition: 0.2s linear 0.1s;
+			background-color: #2b5996;
+		}
+		&:hover{
+			&::before{
+				width: 100%;
+				transition: 0.2s linear;
+			}
+		}
+	}
 	@media(max-width: 1024.1px){
 		display: flex;
 		flex-direction: column;
