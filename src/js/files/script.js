@@ -97,3 +97,8 @@ if (window.innerWidth < 1024) {
   lang.remove();
   placeToIncluding.appendChild(lang);
 }
+
+
+document.addEventListener("formSent", function (e) {
+	Fancybox.show([{ src: "#success-answer", type: "inline" }])
+});

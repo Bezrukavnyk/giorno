@@ -2,10 +2,13 @@
 
 .doctor-list__wrap {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: rem(70) rem(15);
     padding: rem(50) 0;
-  
+    @media (max-width: 1160px) {
+      grid-template-columns: repeat(3, 1fr);
+      padding: rem(20) rem(0);
+    }
     @media (max-width:768px) {
       grid-template-columns: 1fr 1fr;
       gap: rem(20) rem(20);
@@ -151,3 +154,5 @@
       }
     }
   }
+
+.certificate__slide{cursor: pointer;}

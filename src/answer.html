@@ -41,22 +41,22 @@
 					<div class="ask_a_question__container">
 						<h2 class="header-h2">Задати питання</h2>
 						<div class="ask_a_question__wrap max-width-left">
-							<form action="#">
+							<form action="#" data-ajax method="post">
 								<label class="ask-input">
 									ФИО 
-									<input name="" type="text" required>
+									<input name="name" type="text" required>
 								</label>
 								<label class="ask-input">
 									Телефон 
-									<input type="tel" name="" required>
+									<input type="tel" name="phone" required>
 								</label>
 								<label class="ask-input">
 									E-mail
-									<input type="email" name="" required>
+									<input data-required="email" type="email" name="email" required>
 								</label>
 								<label class="ask-textarea">
 									Питання
-									<textarea name="" ></textarea>
+									<textarea name="question" ></textarea>
 								</label>
 								<button class="btn btn-link">Відправити</button>
 							</form>

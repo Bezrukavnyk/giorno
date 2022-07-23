@@ -5,10 +5,14 @@
     &__wrap {
       padding: rem(55) rem(0) rem(55) rem(0);
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: rem(18) rem(18);
   
-      @media (max-width: 768px) {
+      @media (max-width: 1260px) {
+        grid-template-columns: repeat(3, 1fr);
+        padding: rem(20) rem(0);
+      }
+      @media (max-width: 998px) {
         grid-template-columns: 1fr 1fr;
         padding: rem(20) rem(0);
       }
@@ -92,3 +96,14 @@
     margin-left: auto;
   }
   
+  .swiper{width: 100%;}
+
+  [data-error]._form-focus{
+    color: red;
+    & ~ label{
+      color: red;
+      span{
+        color: red;
+      }
+    }
+  }

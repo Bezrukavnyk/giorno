@@ -136,15 +136,20 @@
 									<span>он-лайн</span>
 								</p>
 							</div>
-							<form action="#" method="post" class="contact-form__form">
+							<form action="#" data-ajax method="post" class="contact-form__form">
 								<div class="form__inputs--wrap">
-									<input class="input" type="text" name="" placeholder="Ім'я" required>
-									<input class="input" type="tel" name=""  placeholder="Телефон" required>
-									<button class="submit-btn" type="submit">Залишити заявку</button>
+									<input class="input" type="text" name="name" placeholder="Ім'я" required />
+									<input class="input" type="tel" name="phone" placeholder="Телефон" required />
+									<button class="submit-btn" type="submit">
+										Залишити заявку
+									</button>
 								</div>
 								<div class="checkbox">
-									<input id="c_1" data-error="Ошибка" required class="checkbox__input" type="checkbox" value="1" name="form[]">
-									<label for="c_1" class="checkbox__label"><span class="checkbox__text">Натискаючи кнопку “Залишити заявку”, я даю згоду на обробку персональних даних</span></label>
+									<input id="c_1" data-error="Ошибка" required class="checkbox__input" type="checkbox" value="1"
+										name="form[]" />
+									<label for="c_1" class="checkbox__label"><span class="checkbox__text">Натискаючи кнопку “Залишити
+											заявку”, я даю згоду на
+											обробку персональних даних</span></label>
 								</div>
 							</form>
 							<div class="contact-form__image">
